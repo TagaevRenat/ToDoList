@@ -1,0 +1,17 @@
+.list-custom {
+    margin: 15px;
+    border-color: black;
+    border: 0.25rem;
+}
+
+.body {
+    background-color: blue;
+}
+
+.col-8 {
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
