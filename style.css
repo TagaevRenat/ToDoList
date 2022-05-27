@@ -1,17 +1,69 @@
-.list-custom {
-    margin: 15px;
-    border-color: black;
-    border: 0.25rem;
+#ol {
+    padding-left: 20px;
+    margin: 0px;
 }
 
 .body {
-    background-color: blue;
+    background: linear-gradient(#79f3e9, #0976f3);
+    height: 100vh;
 }
 
-.col-8 {
-    background-color: white;
-    border-color: white;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
+#countainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+#formDiv {
+    display: grid;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 1%;
+}
+
+#inputID {
+    margin: 2px;
+}
+
+#submit {
+    background-color: #c409f3;
+    color: white;
+    border: none;
+    height: 1.7em;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#reset {
+    color: white;
+    background-color: rgb(253, 115, 115);
+    border: none;
+    height: 1.7em;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.list-custom {
+    background-color: aliceblue;
+    display: list-item;
+    font-size: 15px;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    padding: 1%;
+}
+
+.del-btn {
+    margin: 5px;
 }

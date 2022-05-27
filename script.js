@@ -5,8 +5,8 @@ function submitfunction(event) {
     counter();
     addCaseName()
 }
-const form = document.getElementById('form');
-form.addEventListener('submit', submitfunction);
+const form = document.getElementById('submit');
+form.addEventListener('click', submitfunction);
 
 function addCaseName() {
     let inputObj = document.getElementById('inputID');
@@ -21,19 +21,23 @@ function addCaseName() {
     par.innerHTML = nameOfCase;
     liLast.append(par)
 
-    let delButt = document.createElement('input')
+    let delButt = document.createElement('button')
     delButt.type = 'button'
-    delButt.className = "btn btn-outline-dark"
-    delButt.value = "Удалить дело"
+    delButt.className = "del-btn"
     delButt.onclick = deleteCase
     liLast.append(delButt)
+    let trashIcon = document.createElement('i')
+    trashIcon.className = "fa-solid fa-trash-can"
+    delButt.append(trashIcon)
 
-    let readyButt = document.createElement('input')
+    let readyButt = document.createElement('button')
     readyButt.type = 'button'
     readyButt.className = "btn btn-outline-success"
-    readyButt.value = "Дело сделанно!"
     readyButt.onclick = caseDone
     liLast.append(readyButt)
+    let readyIcon = document.createElement('i')
+    readyIcon.className = "fa-solid fa-check"
+    readyButt.append(readyIcon)
 }
 
 function counter() {
@@ -56,8 +60,7 @@ function edit() {
 function caseDone() {
     let id = this.parentNode.id;
     let elem = document.getElementById(id)
-    elem.style.backgroundColor = '#b3ffb0'
-
+    elem.style.backgroundColor = 'rgb(179, 255, 176)'
 }
 
 function deleteCase() {
